@@ -15,6 +15,17 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+            <tbody>
+                <tr ng-repeat="mobile in mobiles">
+                    <td>{{mobile.brand}}</td>
+                    <td>{{mobile.likes}}</td>
+                    <td>{{mobile.dislikes}}</td>
+                    <td>
+                        <input type="button" value="Like" />
+                        <input type="button" value="Dislike" />
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
